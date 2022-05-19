@@ -382,11 +382,11 @@ margin-right: 30px;
   background-color: var(--hero-title-color);
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
+/*.team-list {
+    display: flex;
+    justify-content: space-between;
 
+}*/
 .team-title {
   margin-bottom: 50px;
   font-family: Roboto, sans-serif;
