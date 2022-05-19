@@ -1,0 +1,29 @@
+  address {
+      font-style: normal;
+  }
+
+  .contact-address {
+      color: var(--hero-title-color);
+  }
+
+  .contact-link {
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      color: var(--hero-title-color);
+  }
+
+  .contact {
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+  }
+
+  .contacts {
+      padding-bottom: 9px;
+  }

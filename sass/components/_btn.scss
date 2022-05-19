@@ -1,0 +1,31 @@
+.btn.current {
+    background-color: var(--accsent-color);
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: #212121;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.btn:focus {
+    color: #FFFFFF;
+    background-color: var(--accsent-color)
+}

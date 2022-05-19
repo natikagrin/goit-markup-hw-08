@@ -1,0 +1,77 @@
+.online {
+    margin-left: 93px;
+    flex-grow: 1;
+}
+
+.online-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.add-email {
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+/*.add-fild{
+             width: 358px;
+             height: 50px;
+         }*/
+.footer-input {
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2787px;
+    background: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-field .container {
+    display: flex;
+}
+
+.add-btn {
+    margin-left: 12px;
+    padding-right: 62px;
+    padding-left: 34px;
+    height: 50px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+}
+
+
+.add-icon {
+    position: absolute;
+    margin-left: 10px;
+
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accsent-color);
+}
+
+.footer-input:placeholder-shown,
+.footer-input:focus-visible {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+}

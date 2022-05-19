@@ -1,0 +1,106 @@
+ .team {
+     padding-bottom: 94px;
+     padding-top: 94px;
+     background-color: #F5F4FA;
+ }
+
+ .team-list__item {
+     background-color: var(--hero-title-color);
+ }
+
+ .team-list {
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .team-title {
+     margin-bottom: 50px;
+     font-family: Roboto, sans-serif;
+     font-size: 36px;
+     line-height: 1.2;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--main-title-color);
+ }
+
+ .team__top-text {
+     margin-bottom: 10px;
+     font-family: Roboto, sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.2;
+     text-align: center;
+     letter-spacing: 0.03em;
+
+ }
+
+ .team__bottom-text {
+     margin-left: 0;
+     margin-right: 0;
+     margin-bottom: 16px;
+     font-family: Roboto, sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.19;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--second-title-color);
+ }
+
+ .img {
+     display: block;
+     width: 100%;
+ }
+
+ .team-foto {
+     padding-top: 30px;
+     padding-bottom: 30px;
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+         0px 1px 1px rgba(0, 0, 0, 0.14),
+         0px 2px 1px rgba(0, 0, 0, 0.2);
+     border-radius: 0px 0px 4px 4px;
+ }
+
+ .team-soc__list {
+     display: flex;
+     justify-content: center;
+ }
+
+ .team-soc__item+.team-soc__item {
+     margin-left: 10px;
+ }
+
+ /*посилання на соцмережі*/
+ .team-soc__link {
+     width: 44px;
+     height: 44px;
+     background-color: #FFFFFF;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* fill: #FFFFFF;*/
+     transition-property: background-color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    background-color: var(--accsent-color);
+            /*fill: #2196F3;*/}
+    &:hover .team-soc__icon {
+     fill: #FFFFFF;
+        }
+     &:focus {
+    background-color: var(--accsent-color);
+     /*fill: #2196F3;*/
+        }
+     &:focus .team-soc__icon {
+     fill: #FFFFFF;
+        }
+ }
+
+ .team-soc__icon {
+     fill: #AFB1B8;
+ }
+
+ 

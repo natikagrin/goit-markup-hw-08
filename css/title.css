@@ -1,0 +1,11 @@
+.top-text--light {
+  color: var(--hero-title-color);
+}
+
+.top-text--dark {
+  color: var(--main-title-color);
+}
+
+.button--light {
+  color: var(--hero-title-color);
+}/*# sourceMappingURL=title.css.map */

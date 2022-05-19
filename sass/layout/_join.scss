@@ -1,0 +1,64 @@
+ .join {
+     margin-left: 70px;
+     padding-top: 10px;
+ }
+
+ .join .container {
+     display: flex;
+ }
+
+ .join-title {
+     margin-bottom: 20px;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.7;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+ }
+
+ .join-soc {
+     display: flex;
+ }
+
+ .join-soc-link {
+     width: 44px;
+     height: 44px;
+     background-color: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition-property: background-color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .join-soc-link {
+     fill: var(--hero-title-color);
+
+ }
+
+ .join-soc-item+.join-soc-item {
+     margin-left: 10px;
+ }
+
+ /*змінити колір елемента
+        .join-soc-icon:nth-child(2){
+        color: #2196F3;
+        }*/
+ .join-soc-link:hover {
+     background-color: var(--accsent-color);
+ }
+
+ .join-soc-link:focus {
+     background-color: var(--accsent-color);
+ }
+
+ .join-soc-link:hover .join-soc-icon {
+     fill: #FFFFFF;
+ }
+
+ .join-soc-link:focus .join-soc-icon {
+     fill: #FFFFFF;
+ }
