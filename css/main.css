@@ -107,6 +107,21 @@ body {
   margin: 0 auto;
   /*outline: 1px solid;*/
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 header {
   border-bottom: 1px solid;
@@ -373,24 +388,42 @@ margin-right: 30px;
 }
 
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /*padding-bottom: 94px;
+  padding-top: 94px;*/
   background-color: #F5F4FA;
 }
 
-.team-list__item {
-  background-color: var(--hero-title-color);
+.team-list {
+  margin-bottom: -30px;
+  /*display: flex;
+  justify-content: space-between;*/
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
-/*.team-list {
-    display: flex;
-    justify-content: space-between;
+.team-list__item {
+  margin-bottom: 30px;
+  background-color: var(--hero-title-color);
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    /*width: calc(100% / 2 - 30px);*/
+    flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
 
-}*/
 .team-title {
   margin-bottom: 50px;
   font-family: Roboto, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
