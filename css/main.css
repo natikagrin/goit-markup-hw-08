@@ -307,15 +307,18 @@ header {
 @media screen and (min-width: 480px) {
   .feature__top-text {
     font-family: Roboto, sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 16px;
     text-align: center;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .feature__top-text {
     font-family: Roboto, sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -635,11 +638,12 @@ margin-right: 30px;
 
 .client-list__item {
   margin-bottom: 30px;
-  margin-right: 15px;
+  margin-left: 30px;
 }
 @media screen and (min-width: 480px) {
   .client-list__item {
     flex-basis: calc(50% - 30px);
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -680,7 +684,7 @@ margin-right: 30px;
 }
 
 .client-list__link {
-  /*width: 210px;*/
+  /* width: 210px;*/
   height: 92px;
   display: flex;
   justify-content: center;

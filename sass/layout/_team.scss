@@ -12,8 +12,7 @@
      background-color: #F5F4FA;
  }
  .team-list {
-     
-     margin-bottom: -30px;
+ margin-bottom: -30px;
      @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +98,7 @@ margin-bottom: 50px;
      justify-content: center;
  }
 
- .team-soc__item+.team-soc__item {
+ .team-soc__item +.team-soc__item {
      margin-left: 10px;
  }
 
