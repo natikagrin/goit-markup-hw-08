@@ -18,7 +18,7 @@
  }
 
  .navigation {
-     display: flex;
+     display: none;
      align-items: center;
  }
 
@@ -75,6 +75,9 @@
  .nav-list.link.current {
      color: var(--accsent-color);
  }
+  .header__connect{
+      display: none;
+  }
  .header__connect {
      margin-left: auto;
  }
@@ -111,4 +114,73 @@
      margin-right: 10px;
      fill: currentColor
  }
+ .menu-open-btn{
+     margin-left: auto;
+     border: none;
+     background: none;
+ }
+ .menu-close-btn{
+     display: block;
+     margin-left: auto;
+ }
  
+ .mob-menu{
+   position:fixed;
+   z-index: 1;
+   top: 0;  
+   left: 0;
+   background-color: #FFFFFF;
+   width: 100vw;
+   height: 100vh;
+   padding-top: 20px;
+   padding-bottom: 48px;
+   
+   .container{
+       display: block;
+   }
+ }
+ .mob-list{
+     margin-bottom: 302px;
+ }
+ .mob-list__item{
+     &:not(:last-child){
+         margin-bottom: 36px;
+     }
+ }
+ .mob-list__link{
+    font-family: Roboto sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+       color: #212121;
+ }
+ .mob-connect{
+     margin-bottom: 64px;
+ }
+ .mob-connect-tel{
+    font-family: Roboto sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+         color: #2196F3;
+ }
+ .mob-connect-mail{
+font-family: Roboto sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+ }
+
+ .mob-soc__link{
+    font-family: Roboto sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+    letter-spacing: 0.02em;
+     color: #2196F3;
+ }
