@@ -46,7 +46,6 @@
 
 .feature-list {
 margin-bottom: -30px;
-
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
@@ -55,8 +54,9 @@ margin-bottom: -30px;
 }
 
 .feature-list__item {
-    width: 270px;
+    width: 100%;
 margin-bottom: 30px;
+margin-right: 15px;
 
     @media screen and (min-width:768px) {
         /*width: calc(100% / 2 - 30px);*/
@@ -70,13 +70,13 @@ margin-bottom: 30px;
     }
 }
 .feature-list .feature-list__item {
-    width: 270px;
+   width: 270px;
 
 }
 
 .feature-list__link {
     margin-bottom: 30px;
-    width: 270px;
+    width: 100%;
     height: 120px;
     left: 215px;
     top: 774px;
