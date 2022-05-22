@@ -268,38 +268,58 @@ header {
 }
 
 .hero {
-  background: #2F303A;
-  text-align: center;
-  padding-top: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+  background: #2F303A;
+  text-align: center;
+  padding: 118px 60px 30px 60px;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding: 118px 60px 30px 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    /*padding: 118px 204px 30px 204px;*/
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 252px 30px 252px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2x.jpg);
+  }
 }
 
 .hero__top-text {
   margin-top: 0;
   margin-bottom: 45px;
-  padding: 118px 60px 30px 60px;
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
-  /*@media screen and (min-width:768px) {
-  padding: 118px 204px 30px 204px;
-      }*/
-}
-@media screen and (min-width: 480px) {
-  .hero__top-text {
-    padding: 118px 60px 30px 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__top-text {
-    padding: 200px 252px 30px 252px;
-  }
 }
 
 /*button*/
@@ -377,6 +397,13 @@ header {
     margin-left: -30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
 
 .feature-list__item {
   width: 100%;
@@ -397,7 +424,7 @@ header {
 }
 
 .feature-list .feature-list__item {
-  width: 270px;
+  width: 100%;
 }
 
 .feature-list__link {
@@ -430,6 +457,11 @@ header {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
+}
 
 .about-title {
   margin-top: 0;
@@ -445,6 +477,13 @@ header {
 .about-list {
   margin-left: -30px;
 }
+@media screen and (min-width: 1200px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
 
 .about-foto {
   display: block;
@@ -453,10 +492,11 @@ header {
 /* .about-item:not(:last-child){
 margin-right: 30px;
         } відступи*/
-.about-list__item {
-  flex-basis: cal(10px)/3;
-  /* width:  calc(100%/3-30px);*/
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .about-list__item {
+    flex-basis: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+  }
 }
 
 .about-top-wrap {
