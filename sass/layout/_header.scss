@@ -117,12 +117,25 @@
  .menu-open-btn{
      margin-left: auto;
      border: none;
+     color: #212121;
      background: none;
+   
+ }
+ .menu-open-icon:hover,
+ .menu-open-icon:focus {
+     color: var(--accsent-color);
  }
  .menu-close-btn{
-     display: block;
+  display: block;
      margin-left: auto;
+    border: none;  
+    background: none;  
  }
+ .menu-close-icon:hover,
+ .menu-close-icon:focus{
+color: var(--accsent-color);
+ }
+
  
  .mob-menu{
    position:fixed;
@@ -134,14 +147,21 @@
    height: 100vh;
    padding-top: 20px;
    padding-bottom: 48px;
-   
    .container{
-       display: block;
+        overflow-y: auto;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       justify-content: space-between;
+       align-items: flex-start;
    }
  }
- .mob-list{
-     margin-bottom: 302px;
+ .mob-menu-top{
+     width: 100%;
  }
+ /*.mob-list{
+     margin-bottom: 302px;
+ }*/
  .mob-list__item{
      &:not(:last-child){
          margin-bottom: 36px;
@@ -154,11 +174,17 @@
         line-height: 1.18;
         letter-spacing: 0.02em;
        color: #212121;
+    transition: color 250ms linear;
  }
- .mob-connect{
+ .mob-list__link:hover,
+ .mob-list__link:focus{
+    color: #2196F3;
+ }
+        
+ .mob-connect__list{
      margin-bottom: 64px;
  }
- .mob-connect-tel{
+ .mob-connect__tel{
     font-family: Roboto sans-serif;
         font-weight: 500;
         font-size: 34px;
@@ -166,7 +192,7 @@
         letter-spacing: 0.02em;
          color: #2196F3;
  }
- .mob-connect-mail{
+ .mob-connect__mail{
 font-family: Roboto sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -175,12 +201,40 @@ font-family: Roboto sans-serif;
 
     color: #757575;
  }
+.mob-soc .container{
+    display: flex;
+   align-items: center;
+}
+.mob-soc__list{
+    display: flex;
+    /*position: relative;
+    padding-left: 100px;*/
 
+}
+/*.mob-soc__list::before{
+    content: "";
+   position: absolute;
+    width: 60px;
+    height: 1;
+    background-color: #212121;
+    left: 0;
+    top: 10px;
+}*/
+.mob-soc__item:not(:last-child){
+    margin-right: 20px;
+    border-right:not(:last-child){
+        background-color: #212121;
+    
+    }
+}
  .mob-soc__link{
-    font-family: Roboto sans-serif;
+     font-family: Roboto sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.22;
     letter-spacing: 0.02em;
      color: #2196F3;
- }
+}
+.no-scrol{
+    overflow: hidden;
+}
