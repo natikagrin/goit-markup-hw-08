@@ -369,7 +369,7 @@ header {
   margin-right: 20px;
 }
 .mob-soc__item:not(:last-child) border-right:not(:last-child) {
-  background-color: #212121;
+  background-color: var(--second-title-color);
 }
 
 .mob-soc__link {
