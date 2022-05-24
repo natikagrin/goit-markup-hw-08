@@ -40,14 +40,18 @@ margin-left: 210px;
                  }
         }
 /*.logo-header{
-@media screen and (min-width:1200px) {
-        margin-right: 95px;
+@media screen and (min-width:480px) {
+      margin-left: 15px;
     }
 }*/
  .header__logo {
     @media screen and (min-width:1200px) {
     margin-left: 95px;
     }
+        @media screen and (min-width:480px) {
+            margin-left: 15px;
+        
+        }
      font-family: 'Raleway';
      font-weight: 700;
      font-size: 26px;
@@ -170,7 +174,7 @@ margin-left: 210px;
     @media screen and (min-width:768px){
         display: none;
     }
-           @media screen and (min-width:768px) {
+           @media screen and (min-width:1200px) {
                display: none;
            }
    
