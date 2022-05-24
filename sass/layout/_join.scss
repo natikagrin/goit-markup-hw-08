@@ -5,6 +5,11 @@
 
  .join .container {
      display: flex;
+        @media screen and (min-width:480px) {
+            
+                flex-wrap: wrap;
+                margin: 247px 137px 276px 137px;
+            }
  }
 
  .join-title {

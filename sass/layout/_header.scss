@@ -15,22 +15,46 @@
 
  .menu-list {
      display: flex;
+    @media screen and (min-width:768px){
+margin-left: 210px;
+@media screen and (min-width:1200px) {
+       margin-left: 93px;
+    }
+    }
  }
-
  .navigation {
-     display: none;
+    display: flex;
+    align-items:center;
+    
+    @media screen and (min-width:480px){
+    display: none;
      align-items: center;
- }
-
+    } 
+        @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+        }
+                 @media screen and (min-width:1200px) {
+                     display: flex;
+                     align-items: center;
+                 }
+        }
+/*.logo-header{
+@media screen and (min-width:1200px) {
+        margin-right: 95px;
+    }
+}*/
  .header__logo {
-     margin-right: 95px;
+    @media screen and (min-width:1200px) {
+    margin-left: 95px;
+    }
      font-family: 'Raleway';
      font-weight: 700;
      font-size: 26px;
      line-height: 1.2;
      letter-spacing: 0.03em;
      color: #2196F3;
- }
+}
  .colortext {
      color: black;
      /* чорний  колір лого */
@@ -40,10 +64,18 @@
      color: #FFFFFF;
      /*білий колір лого*/
  }
+
  .menu-list__item:not(:last-child) {
      margin-right: 50px;
  }
-
+ .menu-list{
+    @media screen and (min-width:768px){
+     margin-left: 68px;
+    }
+        @media screen and (min-width:1200px) {
+            margin-left: 93px;
+        }
+ }
  .menu-list__link {
     position: relative;
      display: block;
@@ -76,12 +108,28 @@
      color: var(--accsent-color);
  }
   .header__connect{
+     
+    @media screen and (min-width:480px) {
       display: none;
+    }
+@media screen and (min-width:768px) {
+        display: flex;}
+        
+  @media screen and (min-width:1200px) {
+      display: flex;
+     
   }
- .header__connect {
-     margin-left: auto;
- }
-
+}
+.connect__list{
+@media screen and (min-width:768px) {
+        padding-left: 50px;
+       
+}
+@media screen and (min-width:1200px) {
+    display: flex;
+   
+}
+}
  .connect__mail {
      margin-right: 50px;
      font-weight: 500;
@@ -119,6 +167,12 @@
      border: none;
      color: #212121;
      background: none;
+    @media screen and (min-width:768px){
+        display: none;
+    }
+           @media screen and (min-width:768px) {
+               display: none;
+           }
    
  }
  .menu-open-icon:hover,
@@ -131,12 +185,9 @@
     border: none;  
     background: none;  
  }
- .menu-close-icon:hover,
- .menu-close-icon:focus{
-color: var(--accsent-color);
- }
-
- 
+.menu-close-btn:hover svg, .menu-close-btn:focus svg{
+    fill: var(--accsent-color);
+}
  .mob-menu{
    position:fixed;
    z-index: 1;
@@ -156,6 +207,14 @@ color: var(--accsent-color);
        align-items: flex-start;
    }
  }
+  .mob-menu{
+    @media screen and (min-width:1200px){
+        display: none;
+    }
+         @media screen and (min-width:768px) {
+             display: none;
+         }
+  }
  .mob-menu-top{
      width: 100%;
  }
@@ -180,7 +239,10 @@ color: var(--accsent-color);
  .mob-list__link:focus{
     color: #2196F3;
  }
-        
+   .mob-list-link{
+        position: relative;
+            display: block;
+   }     
  .mob-connect__list{
      margin-bottom: 64px;
  }
@@ -190,8 +252,17 @@ color: var(--accsent-color);
         font-size: 34px;
         line-height: 1.18;
         letter-spacing: 0.02em;
-         color: #2196F3;
+         color: #757575;
+        transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
+ .mob-connect__tel:hover{
+     color: var(--accsent-color);
+ }
+  .mob-connect__tel:focus{
+      color: var(--accsent-color);
+  }
  .mob-connect__mail{
 font-family: Roboto sans-serif;
     font-weight: 500;
@@ -222,11 +293,12 @@ font-family: Roboto sans-serif;
 }*/
 .mob-soc__item:not(:last-child){
     margin-right: 20px;
-    
-    border-right:not(:last-child){
+    padding-right: 20px;
+    border-right: 1px solid var(--accsent-color);
+   /* border-right:not(:last-child){
         background-color: var(--second-title-color);
     
-    }
+    }*/
 }
  .mob-soc__link{
      font-family: Roboto sans-serif;
