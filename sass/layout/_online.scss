@@ -1,17 +1,20 @@
 .online {
+   /*@media screen and (min-width:1200px) {
     margin-left: 93px;
+}*/
     flex-grow: 1;
 }
 
 .online-title {
-   
     margin-bottom: 20px;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
 }
 
 .add-email {
@@ -47,7 +50,9 @@
       flex-wrap: wrap;
   }
 }
-
+.add-fild{
+   text-align: center;
+}
 .add-btn {
     margin-left: 12px;
     padding-right: 62px;
@@ -62,9 +67,15 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-@media screen and (min-width:480px) {
-    margin: 20px 140px 60px 140px;
-}}
+    @media screen and (min-width:1200px) {
+        margin-top: 10px;}
+}
+.footer-input{
+    @media screen and (min-width:480px) {
+        margin-bottom: 20px;}
+    
+
+}
 
 
 .add-icon {
@@ -85,3 +96,12 @@
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
 }
+.btn-for-tablet{
+@media screen and (min-width:480px) {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+        @media screen and (min-width:1200px) {
+        display: inline-flex;
+}}

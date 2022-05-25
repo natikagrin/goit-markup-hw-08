@@ -21,12 +21,13 @@
     <!--Шапка-->
     <header class="header">
         <div class="container">
+            <div class="logo-header">
+                <a href="" class="logo header__logo link">Web<span class="colortext">Studio</span></a>
+            </div>
             <button type="button" class="menu-open-btn"><svg class="" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
             </svg></button>
-            <div class="logo-header">
-             <a href="" class="logo header__logo link">Web<span class="colortext">Studio</span></a>
-            </div>
+            
               <nav class="navigation">
            <ul class="menu-list list">
                 <li class="menu-list__item"><a href="./index.html" class="menu-list__link link current">Студия</a></li>
@@ -92,16 +93,16 @@
     </header>
     <main>
         <!--hero-->
-        <!--- <section class="hero">
+         <section class="hero">
             <div class="container">
                 <h1 class="hero__top-text top-text--light">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button type="button" class="hero__button button--light link" data-modal-open>Заказать услугу</button>
                
             </div>
-            </section>-->
+            </section>
        
         <!--feature-->
-      <!----  <section class="feature">
+       <section class="feature">
             <div class="container">
             <ul class="feature-list list">
                  <li class="feature-list__item">
@@ -168,8 +169,8 @@
                 </li>
             </ul>
             </div>
-        </section>-->
-       <!--<section id="team" class="team">
+        </section>
+       <section id="team" class="team">
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list list">
@@ -373,8 +374,8 @@
                 </li>
             </ul>
             </div>
-        </section>-->
-    <!---- <section class="client">
+        </section>
+     <section class="client">
         <div class="container">
             <h2 class="client__top-text top-text--dark">Постоянные клиенты</h2>
             <ul class="client-list list">
@@ -427,13 +428,14 @@
 </li>
   </ul>
             </div>
-        </section>-->
+        </section>
     </main>
     <!--footer-->
    <footer class="footer">
        <div class="container">
+        <div class="footer-tablet">
             <div class="contact-main">
-                
+             
         <a href="" class="logo footer-logo link">Web<span class="colorchange">Studio</span></a>
         <address>
             <ul class="footer-list list">
@@ -480,7 +482,7 @@
                     </a>
                 </li>
                </ul>
-       
+    </div>
         </div>
             <div class="footer-field">
                 
@@ -494,12 +496,13 @@
                      placeholder="E-mail"
                      required id="add-email"/>
             <label class="footer-label" for="add-email"></label>
-            
+            <div class="btn-for-tablet">
             <button type="submit" class="add-btn">Подписаться
                 <svg class="add-icon" width="24" height="24">
                     <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
             </button>
+</div>
             </div>
             </form>
             </section>

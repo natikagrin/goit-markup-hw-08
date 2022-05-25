@@ -184,7 +184,7 @@ header {
 
 /*.logo-header{
 @media screen and (min-width:480px) {
-      margin-left: 15px;
+
     }
 }*/
 .header__logo {
@@ -198,11 +198,6 @@ header {
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-left: 95px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .header__logo {
-    margin-left: 15px;
   }
 }
 
@@ -262,6 +257,10 @@ header {
 }
 
 .nav-list.link.current {
+  color: var(--accsent-color);
+}
+
+.menu-list__link.current {
   color: var(--accsent-color);
 }
 
@@ -492,10 +491,9 @@ header {
   color: #2196F3;
 }
 
-.no-scrol {
-  overflow: hidden;
-}
-
+/*.no-scrol{
+    overflow: hidden;
+}*/
 .hero .container {
   max-width: 100%;
   width: 100%;
@@ -1073,14 +1071,19 @@ margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer .container {
-    display: flex;
-  }
-}
 @media screen and (min-width: 480px) {
   .footer .container {
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
   }
 }
 
@@ -1093,28 +1096,35 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   color: #2196F3;
 }
-@media screen and (min-width: 480px) {
-  .footer-logo {
-    padding: 60px 163px 20px 163px;
-  }
-}
 
 .footer-list {
   padding-top: 20px;
 }
-@media screen and (min-width: 480px) {
-  .footer-list {
-    padding-left: 124px;
-    padding-bottom: 60px;
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
-/*.contact-main-tablet{
-    @media screen and (min-width:768px){
-display: block;
-justify-content: space-around;
-    }
- }*/
+@media screen and (min-width: 480px) {
+  .contact-main {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-main {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-main {
+    text-align: left;
+  }
+}
+
 address {
   font-style: normal;
 }
@@ -1146,12 +1156,17 @@ address {
 }
 
 .join {
-  margin-left: 70px;
-  padding-top: 10px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
 @media screen and (min-width: 480px) {
   .join {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1167,6 +1182,7 @@ address {
 }
 
 .join-title {
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1178,6 +1194,7 @@ address {
 
 .join-soc {
   display: flex;
+  justify-content: center;
 }
 
 .join-soc-link {
@@ -1222,12 +1239,15 @@ address {
 }
 
 .online {
-  margin-left: 93px;
+  /*@media screen and (min-width:1200px) {
+      margin-left: 93px;
+  }*/
   flex-grow: 1;
 }
 
 .online-title {
   margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
@@ -1274,6 +1294,10 @@ address {
   }
 }
 
+.add-fild {
+  text-align: center;
+}
+
 .add-btn {
   margin-left: 12px;
   padding-right: 62px;
@@ -1289,9 +1313,15 @@ address {
   border-radius: 4px;
   border: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .add-btn {
-    margin: 20px 140px 60px 140px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-input {
+    margin-bottom: 20px;
   }
 }
 
@@ -1311,6 +1341,19 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .btn-for-tablet {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-for-tablet {
+    display: inline-flex;
+  }
 }
 
 /* модальне вікно*/
@@ -1348,9 +1391,16 @@ address {
   border-radius: 4px;
   transition: transform 250ms;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
-    padding: 93px 15px;
+    width: 450px;
+    height: 609px;
   }
 }
 
@@ -1528,9 +1578,27 @@ input.modal-input:focus + .form-icon {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .text-check {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-check {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .input-check:checked + .check-text span {
@@ -1593,9 +1661,14 @@ input.modal-input:focus + .form-icon {
 
 .portfolio-selection {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
   list-style: none;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-selection {
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-item {
@@ -1631,6 +1704,20 @@ input.modal-input:focus + .form-icon {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .top-text {
+    width: 100%;
+    height: 100%;
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-text {
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+  }
 }
 
 .portfolio-title {
@@ -1695,6 +1782,12 @@ input.modal-input:focus + .form-icon {
   padding: 20px 24px;
   margin-left: 0;
   margin-right: 0;
+  border-top: none;
+}
+@media screen and (min-width: 768px) {
+  .foto-bottom {
+    flex-grow: 1;
+  }
 }
 
 /*.galery-link:hover .galery-item{

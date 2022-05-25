@@ -15,51 +15,105 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <!--додати стиль
     <link rel="stylesheet" href="./css/portfolio.css" />
-    <link rel="stylesheet" href="./css/styles.css" />-->
+            <link rel="stylesheet" href="./css/styles.css" />-->
     <link rel="stylesheet" href="./css/main.css" />
     <title>Homework#8</title>
-</head>
-
-<body>
-    <!--Шапка-->
-    <!--<header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <a href="" class="logo header__logo link">Web<span class="colortext">Studio</span></a>
-                <ul class="menu-list list">
-                    <li class="menu-list__item"><a href="./index.html" class="menu-list__link link ">Студия</a></li>
-                    <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link current">Портфолио</a></li>
-                    <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="connect header__connect">
-                <ul class="menu-list list">
-                    <li><a class="connect__mail link " href=""><svg class="connect__icon" width="16" height="12">
-                                <use href="./images/symbol-defss.svg#icon-convert" info@devstudio.com.ua></use>
-                            </svg>info@devstudio.com.ua</a>
-                    </li>
-                    <li><a class="connect__tel link" href=""><svg class="connect__icon" width="10" height="16">
-                                <use href="./images/symbol-defss.svg#icon-phone">
+    </head>
     
-                                </use>
-                            </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
+    <body>
+        <!--Шапка-->
+        <header class="header">
+            <div class="container">
+                <div class="logo-header">
+                    <a href="" class="logo header__logo link">Web<span class="colortext">Studio</span></a>
+                </div>
+                <button type="button" class="menu-open-btn"><svg class="" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                    </svg></button>
     
-            </div>
-        </div>
-    </header>-->
+                <nav class="navigation">
+                    <ul class="menu-list list">
+                        <li class="menu-list__item"><a href="./index.html" class="menu-list__link link ">Студия</a>
+                        </li>
+                        <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link curent">Портфолио</a>
+                        </li>
+                        <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="connect header__connect">
+                    <ul class="connect__list list">
+                        <li><a class="connect__mail link " href=""><svg class="connect__icon" width="16" height="12">
+                                    <use href="./images/symbol-defss.svg#icon-convert"></use>
+                                </svg>info@devstudio.com.ua</a>
+                        </li>
+                        <li><a class="connect__tel link" href=""><svg class="connect__icon" width="10" height="16">
+                                    <use href="./images/symbol-defss.svg#icon-phone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <div class="mob-menu">
+                    <div class="container">
+                        <div class="mob-menu-top">
+                            <button type="button" class="menu-close-btn"><svg class="menu-close-icon" width="40"
+                                    height="40">
+                                    <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+                                </svg></button>
+                            <ul class="mob-list list">
+                                <li class="mob-list__item"><a href="./index.html" class="mob-list__link link">Студия</a>
+                                </li>
+                                <li class="mob-list__item"><a href="./portfolio.html" class="mob-list__link link">Портфолио</a></li>
+                                <li class="mob-list__item"><a href="" class="mob-list__link link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="mob-menu-bottom">
+                            <div class="mob-connect">
+                                <ul class="mob-connect__list list">
+                                    <li><a class="mob-connect__tel link" href="">+38 096 111 11 11</a>
+                                    </li>
+                                    <li><a class="mob-connect__mail link " href="">info@devstudio.com.ua</a>
+                                    </li>
+                                </ul>
+    
+                                <div class="mob-soc">
+                                    <ul class="mob-soc__list list">
+                                        <li class="mob-soc__item">
+                                            <a href="" class="mob-soc__link link" target="_blank"
+                                                rel="noopener noreferrer nofollow">Instagram</a>
+    
+                                        </li>
+                                        <li class="mob-soc__item">
+                                            <a href="" class="mob-soc__link link" target="_blank"
+                                                rel="noopener noreferrer nofollow">Twitter</a>
+                                        </li>
+                                        <li class="mob-soc__item">
+                                            <a href="" class="mob-soc__link link" target="_blank"
+                                                rel="noopener noreferrer nofollow">Facebook</a>
+                                        </li>
+                                        <li class="mob-soc__item">
+                                            <a href="" class="mob-soc__link link" target="_blank"
+                                                rel="noopener noreferrer nofollow">Linkedin</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
     <main>
-       <!--<section class="portfolio ">
+       <section class="portfolio ">
             <div class="container">
                 <ul class="portfolio-selection ">
                     <li class="portfolio-item"><button class="btn current" type="button">Все</button></li>
                     <li class="portfolio-item"><button class="btn" type="button">Веб-сайты</button></li>
                     <li class="portfolio-item"><button class="btn" type="button">Приложения</button></li>
+                   
                     <li class="portfolio-item"><button class="btn" type="button">Дизайн</button></li>
                     <li class="portfolio-item"><button class="btn" type="button">Маркетинг</button></li>
-                </ul>-->
-
+                </ul>
+                
                 <div class="gallery">
                     <ul class="gallery-list list">
                         <li class="galery-item">
@@ -188,73 +242,86 @@
     <!--footer-->
     <footer class="footer">
         <div class="container">
-            <div class="contact-main">
-                <a href="" class="footer-logo link">Web<span class="colorchange">Studio</span></a>
-                <address>
-                    <ul class="footer-list list">
-                        <li class="contacts"><a href="https://bit.ly/3pXMvUd" class="contact-link link" target="_blank"
-                                rel="noopener noreferrer">г. Киев, пр-т
-                                Леси Украинки, 26</a> </li>
-                        <li class="contacts"><a href="mailto:info@devstudio.com" class="contact link">info@example.com</a></li>
-                        <li class="contacts"><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
+            <div class="footer-tablet">
+                <div class="contact-main">
+    
+                    <a href="" class="logo footer-logo link">Web<span class="colorchange">Studio</span></a>
+                    <address>
+                        <ul class="footer-list list">
+                            <li class="contacts"><a href="https://bit.ly/3pXMvUd" class="contact-link link" target="_blank"
+                                    rel="noopener noreferrer">г. Киев, пр-т
+                                    Леси Украинки, 26</a> </li>
+                            <li class="contacts"><a href="mailto:info@devstudio.com"
+                                    class="contact link">info@example.com</a></li>
+                            <li class="contacts"><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <div class="join">
+                    <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+                    <ul class="join-soc list">
+                        <li class="join-soc-item">
+                            <a href="" class="join-soc-link">
+    
+                                <svg class="join-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram">
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-soc-item">
+                            <a href="" class="join-soc-link">
+    
+                                <svg class="join-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-tvit">
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-soc-item">
+                            <a href="" class="join-soc-link">
+    
+                                <svg class="join-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook">
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-soc-item">
+                            <a href="" class="join-soc-link">
+                                <svg class="join-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-lin">
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-
-            <div class="join">
-                <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                <ul class="join-soc list">
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="20" hight="20">
-                                <use href="./images/symbol-defs.svg#icon-instagram">
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="20" hight="20">
-                                <use href="./images/symbol-defs.svg#icon-tvit">
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="20" hight="20">
-                                <use href="./images/symbol-defs.svg#icon-facebook">
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-soc-item">
-                        <a href="" class="join-soc-link">
-                            <svg class="join-soc-icon" width="20" hight="20">
-                                <use href="./images/symbol-defs.svg#icon-lin">
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-                <div class="footer-field">
+            <div class="footer-field">
+    
                 <section class="online">
-                        <h2 class="title online-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-                
-                        <form class="add-form">
-                            <div class="add-fild">
-                                <input type="email" class="footer-input" name="add-email" id="add-email" placeholder="E-mail" required
-                                    id="add-email" />
-                                <label class="footer-label" for="add-email"></label>
-                
+                    <h2 class="title online-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+    
+                    <form class="add-form">
+                        <div class="add-fild">
+                            <input type="email" class="footer-input" name="add-email" id="add-email" placeholder="E-mail"
+                                required id="add-email" />
+                            <label class="footer-label" for="add-email"></label>
+                            <div class="btn-for-tablet">
                                 <button type="submit" class="add-btn">Подписаться
                                     <svg class="add-icon" width="24" height="24">
                                         <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                                     </svg>
                                 </button>
                             </div>
-                        </form>
-                    </section>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </footer>
                 </div>
                 </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
