@@ -15,8 +15,7 @@
 
  .join-title {
     @media screen and (min-width:480px) {
-          /*padding: 247px 167px 340px 167px ;*/
-          align-items: center;
+       padding-left: 167px;
         }
      margin-bottom: 20px;
      font-weight: 700;
@@ -29,6 +28,9 @@
 
  .join-soc {
      display: flex;
+    @media screen and (min-width:480px) {
+            padding-left: 137px;
+        }
  }
 
  .join-soc-link {

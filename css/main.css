@@ -1095,13 +1095,17 @@ margin-right: 30px;
 }
 @media screen and (min-width: 480px) {
   .footer-logo {
-    /* padding: 60px 163px 515px 163px;*/
-    align-items: center;
+    padding: 60px 163px 20px 163px;
   }
 }
 
 .footer-list {
   padding-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer-list {
+    padding-left: 124px;
+  }
 }
 
 /*.contact-main-tablet{
@@ -1126,11 +1130,6 @@ address {
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
 }
-@media screen and (min-width: 480px) {
-  .contact-link {
-    padding: 108px 124px 474px 108px;
-  }
-}
 
 .contact {
   font-family: Roboto, sans-serif;
@@ -1139,11 +1138,6 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 480px) {
-  .contact {
-    padding: 137px 124px 416px 124px;
-  }
 }
 
 .contacts {
@@ -1177,13 +1171,17 @@ address {
 }
 @media screen and (min-width: 480px) {
   .join-title {
-    /*padding: 247px 167px 340px 167px ;*/
-    align-items: center;
+    padding-left: 167px;
   }
 }
 
 .join-soc {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .join-soc {
+    padding-left: 137px;
+  }
 }
 
 .join-soc-link {
@@ -1241,6 +1239,11 @@ address {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 480px) {
+  .online-title {
+    padding-left: 167px;
+  }
+}
 
 .add-email {
   border: none;
@@ -1270,6 +1273,11 @@ address {
   }
 }
 @media screen and (min-width: 480px) {
+  .footer-field .container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-field .container {
     flex-wrap: wrap;
   }

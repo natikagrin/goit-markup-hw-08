@@ -4,6 +4,9 @@
 }
 
 .online-title {
+    @media screen and (min-width:480px) {
+            padding-left: 167px;
+        }
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -41,9 +44,10 @@
         }
 @media screen and (min-width:480px) {
     flex-wrap: wrap;
-    
-     
     }
+  @media screen and (min-width:768px) {
+      flex-wrap: wrap;
+  }
 }
 
 .add-btn {
