@@ -62,8 +62,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-
-}
+@media screen and (min-width:480px) {
+    margin: 20px 140px 60px 140px;
+}}
 
 
 .add-icon {
