@@ -7,6 +7,10 @@
   }
 
   .contact-link {
+    @media screen and (min-width:480px) {
+            padding: 108px 124px 474px 108px;
+    
+        }
       font-family: Roboto, sans-serif;
       font-weight: 400;
       font-size: 14px;
@@ -16,6 +20,10 @@
   }
 
   .contact {
+    @media screen and (min-width:480px) {
+            padding: 137px 124px 416px 124px;
+    
+        }
       font-family: Roboto, sans-serif;
       font-weight: 400;
       font-size: 14px;

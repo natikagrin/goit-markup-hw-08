@@ -36,11 +36,13 @@
 }
 
 .footer-field .container {
-    display: flex;
+    @media screen and (min-width:1200px) {
+            display: flex;
+        }
 @media screen and (min-width:480px) {
-   
-        flex-wrap: wrap;
-      margin: ;
+    flex-wrap: wrap;
+    
+     
     }
 }
 

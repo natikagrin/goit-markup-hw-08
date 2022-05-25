@@ -4,15 +4,20 @@
  }
 
  .join .container {
-     display: flex;
+    @media screen and (min-width:1200px) {
+            display: flex;
+        }
         @media screen and (min-width:480px) {
-            
-                flex-wrap: wrap;
-                margin: 247px 137px 276px 137px;
+             flex-wrap: wrap;
+               
             }
  }
 
  .join-title {
+    @media screen and (min-width:480px) {
+          /*padding: 247px 167px 340px 167px ;*/
+          align-items: center;
+        }
      margin-bottom: 20px;
      font-weight: 700;
      font-size: 14px;
