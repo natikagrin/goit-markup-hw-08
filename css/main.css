@@ -1148,6 +1148,11 @@ address {
   margin-left: 70px;
   padding-top: 10px;
 }
+@media screen and (min-width: 480px) {
+  .join {
+    padding-bottom: 60px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .join .container {
@@ -1169,19 +1174,9 @@ address {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-@media screen and (min-width: 480px) {
-  .join-title {
-    padding-left: 167px;
-  }
-}
 
 .join-soc {
   display: flex;
-}
-@media screen and (min-width: 480px) {
-  .join-soc {
-    padding-left: 137px;
-  }
 }
 
 .join-soc-link {
@@ -1238,11 +1233,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-@media screen and (min-width: 480px) {
-  .online-title {
-    padding-left: 167px;
-  }
 }
 
 .add-email {
