@@ -1105,6 +1105,7 @@ margin-right: 30px;
 @media screen and (min-width: 480px) {
   .footer-list {
     padding-left: 124px;
+    padding-bottom: 60px;
   }
 }
 
