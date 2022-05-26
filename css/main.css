@@ -160,7 +160,7 @@ header {
 }
 
 .navigation {
-  display: flex;
+  display: none;
   align-items: center;
 }
 @media screen and (min-width: 480px) {
@@ -298,6 +298,9 @@ header {
   border-radius: 2px;
 }
 
+.header__connect {
+  display: none;
+}
 @media screen and (min-width: 480px) {
   .header__connect {
     display: none;
@@ -1143,6 +1146,9 @@ margin-right: 30px;
   }
 }
 
+.contact-main {
+  text-align: center;
+}
 @media screen and (min-width: 480px) {
   .contact-main {
     margin-bottom: 60px;
@@ -1302,7 +1308,7 @@ address {
              height: 50px;
          }*/
 .footer-input {
-  width: 358px;
+  width: 90%;
   height: 50px;
   left: 815px;
   top: 2787px;

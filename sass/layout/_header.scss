@@ -23,7 +23,7 @@ margin-left: 210px;
     }
  }
  .navigation {
-    display: flex;
+    display: none;
     align-items:center;
     
     @media screen and (min-width:480px){
@@ -145,7 +145,7 @@ margin-left: 210px;
         }
 
   .header__connect{
-     
+     display: none;
     @media screen and (min-width:480px) {
       display: none;
     }
