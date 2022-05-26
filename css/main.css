@@ -240,7 +240,7 @@ header {
   color: #2196F3;
 }
 
-.nav.current {
+.menu-list__link.current {
   color: var(--accsent-color);
 }
 
@@ -260,12 +260,30 @@ header {
   color: var(--accsent-color);
 }
 
-.portfolio_link {
+.portfolio__link.menu-list__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.portfolio__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.portfolio__link:hover,
+.portfolio__link:focus {
+  color: #2196F3;
+}
+
+.portfolio__link {
+  position: relative;
+  display: block;
 }
 
 .portfolio__link.current::after {
