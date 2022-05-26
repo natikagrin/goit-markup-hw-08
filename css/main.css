@@ -1706,11 +1706,20 @@ input.modal-input:focus + .form-icon {
   display: flex;
   margin-bottom: 50px;
   list-style: none;
-  justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .portfolio-selection {
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-selection {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-selection {
+    justify-content: center;
   }
 }
 
