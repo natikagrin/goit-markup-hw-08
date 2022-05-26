@@ -1428,8 +1428,8 @@ address {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    /* padding:93px 15px;*/
-    width: 450px;
+    /* margin:93px 15px;*/
+    width: 100vw;
     height: 609px;
   }
 }
