@@ -240,7 +240,7 @@ header {
   color: #2196F3;
 }
 
-.menu-list.current {
+.nav.current {
   color: var(--accsent-color);
 }
 
@@ -256,12 +256,28 @@ header {
   border-radius: 2px;
 }
 
-.nav-list.link.current {
+.portfolio__link.current {
   color: var(--accsent-color);
 }
 
-.menu-list__link.current {
-  color: var(--accsent-color);
+.portfolio_link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.portfolio__link.current::after {
+  content: "";
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  display: inline-block;
+  background-color: var(--accsent-color);
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 480px) {
