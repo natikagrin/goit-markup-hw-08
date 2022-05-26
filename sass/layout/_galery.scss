@@ -13,7 +13,6 @@
         justify-content: center;
     @media screen and (min-width:480px) {
             flex-wrap: wrap;
-        
         }
     }
 
@@ -26,7 +25,12 @@
    border-radius: 4px;
         }
 }
-
+.portfolio-item{
+@media screen and (min-width:480px){
+    margin-bottom: 15px;
+    
+}
+}
 
 .top-wrap {
     position: relative;

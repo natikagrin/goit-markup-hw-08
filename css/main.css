@@ -1681,6 +1681,12 @@ input.modal-input:focus + .form-icon {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-item {
+    margin-bottom: 15px;
+  }
+}
+
 .top-wrap {
   position: relative;
   overflow: hidden;
