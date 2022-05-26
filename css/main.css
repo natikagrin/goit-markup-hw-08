@@ -1429,7 +1429,7 @@ address {
 @media screen and (min-width: 480px) {
   .modal {
     /* margin:93px 15px;*/
-    width: 100vw;
+    width: 450px;
     height: 609px;
   }
 }
@@ -1437,6 +1437,12 @@ address {
   .modal {
     width: 450px;
     height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1671,6 +1677,7 @@ input.modal-input:focus + .form-icon {
 }*/
 .checkbox-policy {
   color: #2196F3;
+  position: absolute;
 }
 
 .button-form {

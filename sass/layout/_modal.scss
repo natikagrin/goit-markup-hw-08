@@ -36,6 +36,7 @@
              0px 2px 1px rgba(0, 0, 0, 0.2);
          border-radius: 4px;
          transition: transform 250ms;
+         
         @media screen and (min-width:480px) {
               /* margin:93px 15px;*/
               width: 450px;
@@ -289,6 +290,8 @@
 
      .checkbox-policy {
          color: #2196F3;
+        position: absolute;
+                
      }
 
      .button-form {
