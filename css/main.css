@@ -156,25 +156,6 @@ header {
 
 .navigation {
   display: none;
-  align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .navigation {
-    display: none;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
 }
 
 /*.logo-header{
@@ -206,12 +187,6 @@ header {
 
 .menu-list__item:not(:last-child) {
   margin-right: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-list {
-    margin-left: 68px;
-  }
 }
 
 .menu-list__link {
@@ -289,28 +264,7 @@ header {
 .header__connect {
   display: none;
 }
-@media screen and (min-width: 480px) {
-  .header__connect {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__connect {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__connect {
-    display: flex;
-    margin-left: auto;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .connect__list {
-    padding-left: 50px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .connect__list {
     display: flex;
@@ -393,6 +347,8 @@ header {
   height: 100vh;
   padding-top: 20px;
   padding-bottom: 48px;
+  transform: translate(100%);
+  transition: transform 250ms;
 }
 .mob-menu .container {
   overflow-y: auto;
@@ -401,6 +357,10 @@ header {
   height: 100%;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1101,18 +1061,6 @@ margin-right: 30px;
   max-width: 100%;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
-  .footer {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 
 @media screen and (min-width: 480px) {
   .footer .container {
@@ -1284,13 +1232,9 @@ address {
 .online {
   flex-grow: 1;
 }
-@media screen and (min-width: 1200px) {
-  .online {
-    margin-left: 93px;
-  }
-}
 
 .online-title {
+  margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
@@ -1323,11 +1267,6 @@ address {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-field .container {
-    display: flex;
-  }
-}
 @media screen and (min-width: 480px) {
   .footer-field .container {
     flex-wrap: wrap;
@@ -1338,17 +1277,24 @@ address {
     flex-wrap: wrap;
   }
 }
-
-/*.footer-field{
-@media screen and (min-width:1200px){
-    margin-left: px;
+@media screen and (min-width: 1200px) {
+  .footer-field .container {
+    display: flex;
+  }
 }
-}*/
+
+@media screen and (min-width: 1200px) {
+  .footer-field {
+    margin-left: 60px;
+  }
+}
+
 .add-fild {
   text-align: center;
 }
 
 .add-btn {
+  margin-bottom: 20px;
   margin-left: 12px;
   padding-right: 62px;
   padding-left: 34px;
@@ -1362,8 +1308,11 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  /*@media screen and (min-width:1200px) {
-      margin-top: 10px;}*/
+}
+@media screen and (min-width: 1200px) {
+  .add-btn {
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1390,19 +1339,15 @@ address {
   padding-left: 16px;
 }
 
-@media screen and (min-width: 480px) {
-  .btn-for-tablet {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .btn-for-tablet {
-    display: inline-flex;
-  }
-}
-
+/*.btn-for-tablet{
+@media screen and (min-width:480px) {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+        @media screen and (min-width:1200px) {
+        display: inline-flex;
+}}*/
 /* модальне вікно*/
 .backdrop {
   position: fixed;
