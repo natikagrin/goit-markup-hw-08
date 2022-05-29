@@ -7,17 +7,20 @@
 }
 
 .portfolio-selection {
-    display: flex;
+    display: none;
     margin-bottom: 30px;
         list-style: none;
       
     @media screen and (min-width:480px) {
             flex-wrap: wrap;
+            display: none;
         }
          @media screen and (min-width:768px) {
+            display: flex;
             justify-content: center;
          }
          @media screen and (min-width:1200px) {
+            display: flex;
               justify-content: center;
                   }
     }

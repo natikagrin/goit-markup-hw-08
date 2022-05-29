@@ -13,6 +13,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (min-width:1200px) {
+            margin-top: 0;
+                font-weight: 700;
+                text-align: left;
+                font-size: 14px;
+                line-height: 1.7;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+        }
 }
 
 .add-email {
@@ -35,6 +45,8 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    @media screen and (min-width:1200px) {
+        width: 358px;}
 }
 
 .footer-field .container {
@@ -53,12 +65,15 @@
 
 .footer-field{
 @media screen and (min-width:1200px){
-    margin-left:60px;
+    margin-left:auto;
  
 }
 }
 .add-fild{
    text-align: center;
+    @media screen and (min-width:1200px) {
+   display: flex;
+    }
 }
 .add-btn {
     margin-bottom: 20px;
@@ -75,9 +90,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    @media screen and (min-width:1200px) {
-        position: absolute;
-    }
+    
 }
 .footer-input{
     @media screen and (min-width:480px) {
