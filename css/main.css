@@ -151,7 +151,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .menu-list {
-    margin-left: 88px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -297,19 +297,13 @@ header {
 @media screen and (min-width: 1200px) {
   .header__connect {
     display: block;
+    margin-left: auto;
   }
 }
 
-.connect__list {
-  /*@media screen and (min-width:1200px) {
-      display: flex;
-     margin-left:305px ;
-  }*/
-}
 @media screen and (min-width: 1200px) {
   .connect__list {
     display: flex;
-    margin-left: 20px;
   }
 }
 
@@ -321,6 +315,16 @@ header {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
   transition: color 250ms linear;
+}
+@media screen and (min-width: 768px) {
+  .connect__mail {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__mail {
+    margin-right: 50px;
+  }
 }
 
 .connect__tel {
@@ -427,7 +431,6 @@ header {
 }
 
 .mob-list__link {
-  font-family: Roboto sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -648,6 +651,11 @@ header {
     text-transform: uppercase;
   }
 }
+@media screen and (min-width: 768px) {
+  .feature__top-text {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .feature__top-text {
     font-family: Roboto, sans-serif;
@@ -856,6 +864,7 @@ margin-right: 30px;
 }
 @media screen and (min-width: 480px) {
   .team-title {
+    margin-bottom: 30px;
     font-family: Roboto, sans-serif;
     font-size: 28px;
     line-height: 1.2;
@@ -1038,6 +1047,7 @@ margin-right: 30px;
 }
 @media screen and (min-width: 480px) {
   .client__top-text {
+    margin-bottom: 30px;
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -1378,6 +1388,11 @@ address {
   border: none;
 }
 
+@media screen and (min-width: 320px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer-input {
     margin-bottom: 20px;
@@ -1445,6 +1460,13 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms;
+}
+@media screen and (min-width: 320px) {
+  .modal {
+    /* margin:93px 15px;*/
+    width: auto;
+    min-height: auto;
+  }
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -1730,7 +1752,7 @@ input.modal-input:focus + .form-icon {
 @media screen and (min-width: 480px) {
   .portfolio-selection {
     flex-wrap: wrap;
-    display: none;
+    display: flex;
   }
 }
 @media screen and (min-width: 768px) {

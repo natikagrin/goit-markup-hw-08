@@ -93,6 +93,9 @@
     
 }
 .footer-input{
+    @media screen and (min-width:320px) {
+            margin-bottom: 20px;
+        }
     @media screen and (min-width:480px) {
         margin-bottom: 20px;}
     

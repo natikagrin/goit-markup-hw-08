@@ -37,6 +37,7 @@ background-color: var(--hero-title-color);
  .team-title {
 margin-bottom: 50px;
 @media screen and (min-width:480px) {
+    margin-bottom: 30px;
         font-family: Roboto, sans-serif;
         font-size: 28px;
         line-height: 1.2;

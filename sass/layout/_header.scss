@@ -16,7 +16,7 @@
  .menu-list {
      display: flex;
     @media screen and (min-width:768px){
-margin-left: 88px;}
+margin-left: 40px;}
   @media screen and (min-width:1200px) {
       margin-left: 93px;
   }
@@ -144,16 +144,15 @@ margin-left: 88px;}
     
         @media screen and (min-width:1200px) {
             display: block;
+            margin-left: auto;
         }
 }
 .connect__list{
 @media screen and (min-width:1200px) {
         display: flex;
-    margin-left: 20px;}
-/*@media screen and (min-width:1200px) {
-    display: flex;
-   margin-left:305px ;
-}*/
+       
+    }
+
 }
  .connect__mail {
      margin-right: 50px;
@@ -163,6 +162,12 @@ margin-left: 88px;}
      letter-spacing: 0.02em;
      color: var(--second-title-color);
      transition: color 250ms linear;
+    @media screen and (min-width:768px) {
+        margin-right: 0;
+    }
+        @media screen and (min-width:1200px) {
+        margin-right: 50px;
+        }
  }
 
  .connect__tel {
@@ -185,7 +190,8 @@ margin-left: 88px;}
 
  .connect__icon {
      margin-right: 10px;
-     fill: currentColor
+     fill: currentColor;
+    
  }
 
 
@@ -260,13 +266,14 @@ margin-left: 88px;}
      }
  }
  .mob-list__link{
-    font-family: Roboto sans-serif;
+    
         font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
         letter-spacing: 0.02em;
        color: #212121;
     transition: color 250ms linear;
+    
  }
  .mob-list__link:hover,
  .mob-list__link:focus{
