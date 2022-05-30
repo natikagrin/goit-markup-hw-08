@@ -419,6 +419,15 @@ header {
   }
 }
 
+.mob-menu .is-hidden .mob-menu-top {
+  transform: scale(0.5);
+}
+
+.mob-menu .is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .mob-menu-top {
   width: 100%;
 }
