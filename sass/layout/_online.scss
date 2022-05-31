@@ -1,6 +1,7 @@
 .online {
     flex-grow: 1;
- 
+ margin-top: 10px;
+
 }
 
 .online-title {
@@ -29,6 +30,7 @@
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
+   
 }
 
 /*.add-fild{
@@ -45,6 +47,10 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    @media screen and (min-width:768px) {
+            width: 450px;
+            height: 50px;
+        }
     @media screen and (min-width:1200px) {
         width: 358px;}
 }
@@ -64,6 +70,8 @@
 
 
 .footer-field{
+@media screen and (min-width:768px) {
+        padding-bottom: 60px;}
 @media screen and (min-width:1200px){
     margin-left:auto;
  

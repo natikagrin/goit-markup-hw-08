@@ -1,12 +1,17 @@
  .join {
-    @media screen and (min-width:1200px) {
-     margin-left: 70px;
-    margin-top: 10px;
-   }
     @media screen and (min-width:480px) {
             margin-bottom: 60px;
     
         }
+                @media screen and (min-width:768px) {
+                    margin-top: 15px;
+        
+                }
+    @media screen and (min-width:1200px) {
+     margin-left: 70px;
+    margin-top: 10px;
+   }
+   
  }
 
  .join .container {

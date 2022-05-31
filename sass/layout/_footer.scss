@@ -1,9 +1,11 @@
     .footer {
         padding-top: 60px;
-        padding-bottom: 60px;
+      /* padding-bottom: 60px;*/
         background: #2F303A;
     max-width: 100%;
         width: 100%;
+        @media screen and (min-width:480px) {
+                padding-bottom: 60px;}
        
     }
 
@@ -43,6 +45,7 @@
     @media screen and (min-width:768px){
 display: flex;
 justify-content: space-around;
+margin-bottom: -60px;
 
     }
     

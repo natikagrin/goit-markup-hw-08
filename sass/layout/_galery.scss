@@ -3,14 +3,19 @@
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    
+    @media screen and (min-width:480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;}
 }
 
 .portfolio-selection {
     display: none;
     margin-bottom: 30px;
         list-style: none;
-      
+    @media screen and (min-width:320px) {
+            flex-wrap: wrap;
+            display: flex;
+        }
     @media screen and (min-width:480px) {
             flex-wrap: wrap;
             display: flex;
@@ -35,6 +40,10 @@
         }
 }
 .portfolio-item{
+    @media screen and (min-width:320px) {
+            margin-bottom: 15px;
+    
+        }
 @media screen and (min-width:480px){
     margin-bottom: 15px;
 
@@ -119,7 +128,7 @@
         @media screen and (min-width:768px) {
             display: flex;
             flex-wrap: wrap;
-            
+           
             margin-left: -30px;
         }
     /*виставити елементи по вертикалі та горизонталі*/
