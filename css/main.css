@@ -1394,11 +1394,6 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-field {
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-field {
     margin-left: auto;
