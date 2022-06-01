@@ -24,10 +24,10 @@
  .menu-list {
      display: flex;
     @media screen and (min-width:768px){
-margin-left: 40px;}
-  @media screen and (min-width:1200px) {
+margin-left: 80px;}
+ /* @media screen and (min-width:1200px) {
       margin-left: 93px;
-  }
+  }*/
     }
  
  .navigation {
@@ -144,7 +144,7 @@ margin-left: 40px;}
      display: none;
     @media screen and (min-width:768px) {
             display: block;
-          margin-left: auto;
+          margin-left: 60px;
         }
     
         @media screen and (min-width:1200px) {
@@ -160,18 +160,23 @@ margin-left: 40px;}
 
 }
  .connect__mail {
-     margin-right: 50px;
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
-     color: var(--second-title-color);
-     transition: color 250ms linear;
     @media screen and (min-width:768px) {
-        margin-right: 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: var(--second-title-color);
+                transition: color 250ms linear;
+         
     }
         @media screen and (min-width:1200px) {
         margin-right: 50px;
+        font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--second-title-color);
+            transition: color 250ms linear;
         }
  }
 
@@ -182,6 +187,20 @@ margin-left: 40px;}
      letter-spacing: 0.02em;
      color: var(--second-title-color);
      transition: color 250ms linear;
+    @media screen and (min-width:768px) {
+            margin-right: 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: #757575;}
+                         @media screen and (min-width:1200px) {
+                            font-weight: 500;
+                                font-size: 14px;
+                                line-height: 1.14;
+                                letter-spacing: 0.02em;
+                                color: var(--second-title-color);
+                                transition: color 250ms linear;}
  }
 
  .connect__tel:hover,
