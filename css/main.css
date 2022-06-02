@@ -1381,6 +1381,11 @@ address {
   flex-grow: 1;
   margin-top: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .online {
+    position: absolute;
+  }
+}
 
 .online-title {
   margin-top: 30px;
@@ -1403,6 +1408,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: 93px;
   }
 }
 
@@ -1427,15 +1433,28 @@ address {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+@media screen and (min-width: 320px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-input {
+    display: block;
     width: 450px;
     height: 50px;
+    margin-left: 166px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-input {
     width: 358px;
+    margin-left: 93px;
   }
 }
 
@@ -1447,17 +1466,6 @@ address {
 @media screen and (min-width: 768px) {
   .footer-field .container {
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-field .container {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-field {
-    margin-left: auto;
   }
 }
 
@@ -1486,15 +1494,9 @@ address {
   border-radius: 4px;
   border: none;
 }
-
-@media screen and (min-width: 320px) {
-  .footer-input {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .footer-input {
-    margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .add-btn {
+    align-items: center;
   }
 }
 
