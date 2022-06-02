@@ -459,9 +459,9 @@ header {
   width: 100%;
 }
 
-/*.mob-list{
-    margin-bottom: 302px;
-}*/
+/* .mob-list{
+     margin-left: 40px;
+ }*/
 .mob-list__item:not(:last-child) {
   margin-bottom: 36px;
 }
@@ -473,6 +473,10 @@ header {
   letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms linear;
+}
+
+.mob-list__link.current {
+  color: var(--accsent-color);
 }
 
 .mob-list__link:hover,
@@ -489,7 +493,12 @@ header {
   margin-bottom: 64px;
 }
 
+.mob-connect-tel {
+  margin-bottom: 32px;
+}
+
 .mob-connect__tel {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -508,6 +517,7 @@ header {
 }
 
 .mob-connect__mail {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -537,25 +547,26 @@ header {
 .mob-soc__item:not(:last-child) {
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 1px solid var(--accsent-color);
+  border-right: 1px solid var(--second-title-color);
   /* border-right:not(:last-child){
        background-color: var(--second-title-color);
 
    }*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .mob-soc__link {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2196F3;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .mob-soc__link {
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2196F3;
@@ -588,7 +599,7 @@ header {
   margin: 0 auto;
   background: #2F303A;
   text-align: center;
-  padding: 118px 60px 30px 60px;
+  /* padding: 118px 60px 30px 60px;*/
   flex-grow: 1;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
@@ -602,12 +613,12 @@ header {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    padding: 118px 60px 30px 60px;
+    padding-top: 118px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    /*padding: 118px 204px 30px 204px;*/
+    padding-top: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
 }
@@ -661,6 +672,21 @@ header {
   font-size: 16px;
   line-height: 1.8;
   background-color: var(--accsent-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__button {
+    margin-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    margin-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    margin-bottom: 200px;
+  }
 }
 
 .feature {

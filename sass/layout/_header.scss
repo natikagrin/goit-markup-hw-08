@@ -290,8 +290,8 @@ margin-left: 80px;}
  .mob-menu-top{
      width: 100%;
  }
- /*.mob-list{
-     margin-bottom: 302px;
+/* .mob-list{
+     margin-left: 40px;
  }*/
  .mob-list__item{
      &:not(:last-child){
@@ -299,7 +299,6 @@ margin-left: 80px;}
      }
  }
  .mob-list__link{
-    
         font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
@@ -307,6 +306,9 @@ margin-left: 80px;}
        color: #212121;
     transition: color 250ms linear;
     
+ }
+ .mob-list__link.current {
+     color: var(--accsent-color);
  }
  .mob-list__link:hover,
  .mob-list__link:focus{
@@ -319,8 +321,11 @@ margin-left: 80px;}
  .mob-connect__list{
      margin-bottom: 64px;
  }
+ .mob-connect-tel{
+     margin-bottom: 32px;
+ }
  .mob-connect__tel{
-    
+        font-weight: 500;
         font-size: 34px;
         line-height: 1.18;
         letter-spacing: 0.02em;
@@ -336,7 +341,7 @@ margin-left: 80px;}
       color: var(--accsent-color);
   }
  .mob-connect__mail{
-
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -365,26 +370,27 @@ margin-left: 80px;}
 .mob-soc__item:not(:last-child){
     margin-right: 20px;
     padding-right: 20px;
-    border-right: 1px solid var(--accsent-color);
+    border-right: 1px solid var(--second-title-color);
    /* border-right:not(:last-child){
         background-color: var(--second-title-color);
     
     }*/
 }
  .mob-soc__link{
+    @media screen and (min-width:320px) {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+        }
     @media screen and (min-width:480px) {
-    
         font-weight: 500;
         font-size: 18px;
-        line-height: 1.22;
+        line-height: 1.2;
     letter-spacing: 0.02em;
      color: #2196F3;}
-    @media screen and (min-width:320px) {
-            font-size: 12px;
-                line-height: 1.2;
-                letter-spacing: 0.02em;
-                    color: #2196F3;
-                }
+   
         }
 
 /*.no-scrol{
